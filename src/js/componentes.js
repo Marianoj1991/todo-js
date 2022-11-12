@@ -84,10 +84,10 @@ ulFiltros.addEventListener( 'click', (event) => {
     ancorFiltros.forEach((elem) => elem.classList.remove('selected'))
     event.target.classList.add('selected');
 
-    for(const elemento of ulFiltros.children) {
+    for(const elemento of divHtmlTodo.children) {
 
         elemento.classList.remove('hidden');
-        const completado = elemento.classList.contains('completado');
+        const completado = elemento.classList.contains('completed');
 
         switch(filtro) {
 
